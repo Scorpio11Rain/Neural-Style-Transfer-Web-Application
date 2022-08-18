@@ -3,6 +3,7 @@ import neural_style_transfer
 import cv2
 
 ACCEPT_IMG_TYPES = ["jpeg", "png", "jpg"]
+EPOCHS = 40
 
 st.markdown('Author: Runyu Tian')
 st.title('Neural Style Transfer App')
@@ -40,7 +41,7 @@ clicked = st.sidebar.button("Start your own stylization") and content_image and 
 
 if clicked:
     vgg = neural_style_transfer.load_vgg_model()
-    merged = neural_style_transfer.stylize(raw_img, style, vgg, 50)
+    merged = neural_style_transfer.stylize(raw_img, style, vgg, EPOCHS)
     merged = cv2.resize(merged, raw_shape)
     st.subheader("Your stylized image")
     st.image(merged)
