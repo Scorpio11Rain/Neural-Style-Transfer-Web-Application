@@ -9,8 +9,8 @@ from io import BytesIO
 
 
 IMG_SIZE = 400
-STYLE_WEIGHTS = 0.6
-CONTENT_WEIGHTS = 0.1
+STYLE_WEIGHTS = 0.8
+CONTENT_WEIGHTS = 0.2
 OPTIMIZER = tf.optimizers.Adam(learning_rate=0.01, beta_1=0.99, epsilon=1e-1)
 
 def gram_matrix(input_tensor):
