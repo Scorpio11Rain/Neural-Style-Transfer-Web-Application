@@ -40,7 +40,7 @@ clicked = st.sidebar.button("Start your own stylization") and content_image and 
 
 if clicked:
     vgg = neural_style_transfer.load_vgg_model()
-    merged = neural_style_transfer.stylize(raw_img, style, vgg, 60)
+    merged = neural_style_transfer.stylize(raw_img, style, vgg, 50)
     merged = cv2.resize(merged, raw_shape)
     st.subheader("Your stylized image")
     st.image(merged)
