@@ -3,6 +3,9 @@
 link: https://scorpio11rain-nst-web-app-main-nunf6c.streamlitapp.com/
 Author: Runyu Tian
 
+## Screenshot of web app page below
+![Xnip2022-08-18_10-30-56](https://user-images.githubusercontent.com/88039791/185458456-893d1a1a-37aa-4b04-98fe-3799232b0744.jpg)
+
 ## Illustration
 The model for the image stylizing leverages pre-trained famous VGG19. All the loss function (content loss, style loss) and gradient descent algorithm are self-implemented. The main hyperparameters to be adjusted are training epochs, content weights and style weights.
 
