@@ -7,6 +7,8 @@ Author: Runyu Tian
 ![Xnip2022-08-18_10-30-56](https://user-images.githubusercontent.com/88039791/185458456-893d1a1a-37aa-4b04-98fe-3799232b0744.jpg)
 
 ## Illustration
+To get a better sense of how it works, please open the notebook illustration.
+
 The model for the image stylizing leverages pre-trained famous VGG19. All the loss function (content loss, style loss) and gradient descent algorithm are self-implemented. The main hyperparameters to be adjusted are training epochs, content weights and style weights.
 
 In the file neural_style_transfer.py, utils's function for training are defined for stylizing.
